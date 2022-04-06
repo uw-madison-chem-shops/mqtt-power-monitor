@@ -1,49 +1,27 @@
-# MQTT thermocouple
+# MQTT power sensor
 
-Simple project for getting thermocouple sensors online using MQTT.
+Simple project for measuring AC current using MQTT.
 
 Designed to work with [mqtt.chem.wisc.edu](https://mqtt.chem.wisc.edu/).
+
+<img src="./coverart.jpg" width="100%"/>
 
 ## Repository
 
 This is an open source hardware project licensed under the CERN Open Hardware Licence Version 2 - Permissive.
 Please see the LICENSE file for the complete license.
 
-This repository is being mirrored to several version control systems in an attempt to ensure maximum avaliability.
-
-| name             | url                                                        |
-| ---------------- | ---------------------------------------------------------- |
-| GitHub (primary) | https://github.com/uw-madison-chem-shops/mqtt-thermocouple |
-| GitLab           | https://gitlab.com/uw-madison-chem-shops/mqtt-thermocouple |
-
-## PCB
-
-This PCB was designed using KiCAD version 5.
-Refer to `mqtt-thermocouple.pdf` for schematic.
-PCB images generated with [tracespace](https://github.com/tracespace/tracespace) follow.
-
-<img src="./mqtt-thermocouple-.top.svg" width="100%"/>
-<img src="./mqtt-thermocouple-.bottom.svg" width="100%"/>
-
 ## Bill of Materials
 
-| reference      | value            | manufacturer     | part number          | price  | vendors |
-| :------------- | :--------------- | :--------------- | :------------------- | :----- | :------ |
+| part | manufacturer | part number | price |
+| ---- | ------------ | ----------- | ----- |
+| ESP8266 IoT Communication Module with Integrated USB | NCD | PR32-26 | $13.95 |
+| AS1115 34mm 3-Character Red 7-Segment Hexidecimal Display with I2C Interface | NCD | PR33-11 | $47.95 |
+| 1-Channel On-Board 97% Accuracy 70-Amp AC Current Monitor with IoT Interface | NCD | PR18-2_20A | $59.95 |
 
 All prices are extended.
-Assuming an order of 10 PCBs, the boards themselves should cost around $5 each.
 
 ## Firmware
 
 This project uses [micropython](https://micropython.org/), specifically [microhomie](https://github.com/microhomie/microhomie).
 Refer to the "firmware" directory in this repository for detailed instructions.
-
-## Changelog
-
-### Unprinted
-
-### A
-
-#### Added
-- initial design
-
